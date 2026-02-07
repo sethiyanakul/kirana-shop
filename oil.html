@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Oil & Ghee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Oil & Ghee</h1>
+</header>
+
+<section class="section">
+
+    <div class="card">
+        <h3>Sunflower Oil</h3>
+        <p>₹150 / litre</p>
+        <input type="number" min="1" value="1" id="qty-sunflower">
+        <button onclick="buyNow('Sunflower Oil',150,'qty-sunflower')">Buy Now</button>
+        <button onclick="addToCart('Sunflower Oil',150,'qty-sunflower')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <h3>Desi Ghee</h3>
+        <p>₹550 / kg</p>
+        <input type="number" min="1" value="1" id="qty-ghee">
+        <button onclick="buyNow('Desi Ghee',550,'qty-ghee')">Buy Now</button>
+        <button onclick="addToCart('Desi Ghee',550,'qty-ghee')">Add to Cart</button>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

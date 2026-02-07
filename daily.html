@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Needs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Daily Needs</h1>
+</header>
+
+<section class="section">
+
+    <div class="card">
+        <h3>Sugar</h3>
+        <p>₹45 / kg</p>
+        <input type="number" min="1" value="1" id="qty-sugar">
+        <button onclick="buyNow('Sugar',45,'qty-sugar')">Buy Now</button>
+        <button onclick="addToCart('Sugar',45,'qty-sugar')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <h3>Salt</h3>
+        <p>₹20 / kg</p>
+        <input type="number" min="1" value="1" id="qty-salt">
+        <button onclick="buyNow('Salt',20,'qty-salt')">Buy Now</button>
+        <button onclick="addToCart('Salt',20,'qty-salt')">Add to Cart</button>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

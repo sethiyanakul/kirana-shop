@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spices</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Spices</h1>
+</header>
+
+<section class="section">
+
+    <div class="card">
+        <h3>Turmeric Powder</h3>
+        <p>₹30 / 100g</p>
+        <input type="number" min="1" value="1" id="qty-turmeric">
+        <button onclick="buyNow('Turmeric Powder',30,'qty-turmeric')">Buy Now</button>
+        <button onclick="addToCart('Turmeric Powder',30,'qty-turmeric')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <h3>Red Chilli Powder</h3>
+        <p>₹40 / 100g</p>
+        <input type="number" min="1" value="1" id="qty-chilli">
+        <button onclick="buyNow('Red Chilli Powder',40,'qty-chilli')">Buy Now</button>
+        <button onclick="addToCart('Red Chilli Powder',40,'qty-chilli')">Add to Cart</button>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

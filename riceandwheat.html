@@ -1,0 +1,30 @@
+<section class="section">
+    <h2>Available Items</h2>
+
+    <div class="product-box">
+        <p><b>Basmati Rice</b> – ₹90/kg</p>
+        <button onclick="buyNow('Basmati Rice')">Buy Now</button>
+    </div>
+
+    <div class="product-box">
+        <p><b>Sona Masoori</b> – ₹65/kg</p>
+        <button onclick="buyNow('Sona Masoori Rice')">Buy Now</button>
+    </div>
+
+    <div class="product-box">
+        <p><b>Wheat Flour</b> – ₹45/kg</p>
+        <button onclick="buyNow('Wheat Flour')">Buy Now</button>
+    </div>
+
+    <br>
+    <a href="index.html">⬅ Back to Home</a>
+</section>
+
+<script>
+function buyNow(product) {
+    let phone = "919876543210";   // your WhatsApp number
+    let message = "Hello, I want to buy " + product;
+    let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+    window.open(url, "_blank");
+}
+</script>

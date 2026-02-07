@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pulses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Dal & Pulses</h1>
+</header>
+
+<section class="section">
+
+    <div class="card">
+        <h3>Toor Dal</h3>
+        <p>₹120 / kg</p>
+        <input type="number" min="1" value="1" id="qty-toor">
+        <button onclick="buyNow('Toor Dal',120,'qty-toor')">Buy Now</button>
+        <button onclick="addToCart('Toor Dal',120,'qty-toor')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <h3>Moong Dal</h3>
+        <p>₹110 / kg</p>
+        <input type="number" min="1" value="1" id="qty-moong">
+        <button onclick="buyNow('Moong Dal',110,'qty-moong')">Buy Now</button>
+        <button onclick="addToCart('Moong Dal',110,'qty-moong')">Add to Cart</button>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
